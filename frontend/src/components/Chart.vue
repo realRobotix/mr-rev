@@ -99,13 +99,13 @@ async function fetchData() {
                     label: "Total Revenue",
                     data: data.map((item) => item.revenue),
                     borderColor: "rgb(75, 192, 192)",
-                    tension: 0.1,
+                    tension: 0.25,
                 },
                 {
                     label: "Creator Revenue",
                     data: data.map((item) => item.creator_revenue),
                     borderColor: "rgb(255, 99, 132)",
-                    tension: 0.1,
+                    tension: 0.25,
                 },
             ],
         };
@@ -122,7 +122,7 @@ onMounted(() => {
 <style scoped>
 .chart-container {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 }
 
 select {

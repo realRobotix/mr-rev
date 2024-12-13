@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     define: {
-      __API_URL__: JSON.stringify(process.env.API_URL ?? 'http://localhost:8085/'),
+      __API_URL__: JSON.stringify(isProduction ? 'https://mr-rev.realrobotix.me/api/' : 'http://localhost:8083/'),
     },
   };
 });
